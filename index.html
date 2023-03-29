@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>나만의 중고마켓</title>
+    <link rel="stylesheet"
+        href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <style>
+        /* 꾸미기 */
+        .card {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease-in-out;
+            margin-bottom: 1rem;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: all 0.5s ease-in-out;
+        }
+
+        section.cards {
+            padding: 1rem;
+            background-color: #f5f5f5;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        @media screen and (max-width: 576px) {
+            .cards .card {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+
+        @media screen and (min-width: 577px) {
+            .cards .card {
+                width: calc((100% - 2rem) / 3);
+                margin-right: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .cards .card:last-child {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 뼈대 잡기 -->
+    <section class="hero p-5" style="background-color: #212529;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 style="color: #ffffff;">르탄이의 중고마켓</h1>
+                    <p style="color: #ffffff;">집에 있는 물건을 팝니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 여기 -->
+    <section class="cards my-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center align-items-start" style="flex-wrap: wrap;">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://source.unsplash.com/1600x900/?rice-cooker" target="_blank">
+                            <img src="https://source.unsplash.com/1600x900/?rice-cooker" class="card-img-top"
+                                alt="전기밥솥">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">전기밥솥</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">5만원</h6>
+                            <p class="card-text">한 번 밖에 안쓴 전기밥솥 팝니다. 부모님이 독립 할 때 주신 거에요!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://source.unsplash.com/1600x900/?microwave-oven" target="_blank">
+                            <img src="https://source.unsplash.com/1600x900/?microwave-oven" class="card-img-top"
+                                alt="전자레인지">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">전자레인지</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">3만원</h6>
+                            <p class="card-text">사용감 거의 없는 전자레인지 팝니다. 새 거 구입해서 팔게 되었어요!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://source.unsplash.com/1600x900/?refrigerator" target="_blank">
+                            <img src="https://source.unsplash.com/1600x900/?refrigerator" class="card-img-top"
+                                alt="냉장고">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">냉장고</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">10만원</h6>
+                            <p class="card-text">한 달 사용한 냉장고 팝니다. 이사 갈 때 구입해서 일단 사용하고 있었어요.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://source.unsplash.com/1600x900/?xiaomi-vacuum-cleaner" target="_blank">
+                            <img src="https://source.unsplash.com/1600x900/?xiaomi-vacuum-cleaner" class="card-img-top"
+                                alt="냉장고">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">샤오미 진공청소기</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">20만원</h6>
+                            <p class="card-text">신제품이에요. 선물받은 거라 사용할 일이 없어 팔아요!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://source.unsplash.com/1600x900/?wall-mounted-air-conditioner" target="_blank">
+                            <img src="https://source.unsplash.com/1600x900/?wall-mounted-air-conditioner"
+                                class="card-img-top" alt="냉장고">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">벽결이 에어컨</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">30만원</h6>
+                            <p class="card-text">저희 집에서 사용한 에어컨이에요. 아주 시원해요! 구입한지 1년정도 됐어요.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://source.unsplash.com/1600x900/?carpet" target="_blank">
+                            <img src="https://source.unsplash.com/1600x900/?carpet" class="card-img-top" alt="카페트">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">카페트</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">1만원</h6>
+                            <p class="card-text">사용감은 있지만 깨끗해요. 집에서 사용하기에는 너무 커서 팔아요!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
